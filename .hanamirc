@@ -1,0 +1,3 @@
+project=shelfer
+test=rspec
+template=erb
