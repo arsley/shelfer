@@ -5,6 +5,7 @@ module Api
         include Api::Action
 
         def call(params)
+          self.status = BookRepository.new.delete(params[:id]) ? '200' : '404'
         end
       end
     end
