@@ -1,1 +1,1 @@
-resources :books
+resources :books, except: :new

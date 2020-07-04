@@ -4,7 +4,10 @@ module Api
       class Index
         include Api::Action
 
-        def call(params)
+        expose :books
+
+        def call(_params)
+          @books = BookRepository.new.all
         end
       end
     end
